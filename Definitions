@@ -1,1 +1,1 @@
-
+Constructor - constructor which is run during creation of the contract and cannot be called afterwards. It permanently stores the address of the person creating the contract:
