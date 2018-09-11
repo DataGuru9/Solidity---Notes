@@ -1,0 +1,26 @@
+Suppose there is a file Hello.js which include two functions
+
+sayHelloInEnglish = function() {
+  return "Hello";
+};
+sayHelloInSpanish = function() {
+  return "Hola";
+};
+We write a function only when utility of the code is more than one call.
+
+Suppose we want to increase utility of the function to a different file say World.js,in this case exporting a file comes into picture which can be obtained by module.exports.
+
+You can just export both the function by the code given below
+
+var anyVariable={
+ sayHelloInEnglish = function() {
+      return "Hello";
+    };
+  sayHelloInSpanish = function() {
+      return "Hola";
+    }; 
+}
+module.export=anyVariable;
+Now you just need to require the file name into World.js inorder to use those functions
+
+var world= require("./hello.js");
