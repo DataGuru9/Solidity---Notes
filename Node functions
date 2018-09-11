@@ -1,0 +1,2 @@
+The path.resolve() method resolves a sequence of paths or path segments into an absolute path.
+fs.readFileSync(path[, options]) - Returns the contents of the path.
